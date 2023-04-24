@@ -51,7 +51,7 @@ def app():
     
     st.subheader('Movie Review Dataset')
     st.write('We load a movie review dataset containing 2 columns: text - contains the text \
-    of the review, and label - contains the 0 for negative and 1 for positive reviews. The \
+    of the review, and label - contains the Disagree for negative and Agree for positive reviews. The \
     dataset contains 40,000 rows of data. We load the first 20 rows for viewing.')
     
     with st.echo(code_location='below'):
