@@ -29,7 +29,7 @@ def app():
     tokenizer = ToktokTokenizer()
 
     st.title("TextBlob Sentiment Analysis")      
-    st.subheader("(c) 2023 Louie F. Cervantes, M.Eng.")
+    st.subheader("(c) 2023 Ariane Marie L. Lavilla, BSCS 3A-AI")
     
     st.subheader('The TextBlob Package')
     st.write('TextBlob is a Python package for natural language processing (NLP) \
@@ -49,10 +49,10 @@ def app():
     0.0 represents a completely objective viewpoint and 1.0 represents a completely \
     subjective viewpoint.")
     
-    st.subheader('Movie Review Dataset')
-    st.write('We load a movie review dataset containing 2 columns: text - contains the text \
+    st.subheader('PBBM Competency Review')
+    st.write('We load a PBBM Competency review dataset containing 2 columns: text - contains the text \
     of the review, and label - contains the Disagree for negative and Agree for positive reviews. The \
-    dataset contains 40,000 rows of data. We load the first 20 rows for viewing.')
+    dataset contains 50 rows of data. We load the first 20 rows for viewing.')
     
     with st.echo(code_location='below'):
         
@@ -240,7 +240,7 @@ def app():
             csv = result.to_csv(index=False)
             if csv:
                 b64 = base64.b64encode(csv.encode()).decode()  # Convert to base64
-                href = f'<a href="data:file/csv;base64,{b64}" download="survey_data.csv">Download CSV file</a>'
+                href = f'<a href="data:file/csv;base64,{b64}" download="data.csv">Download CSV file</a>'
                 st.markdown(href, unsafe_allow_html=True)
             else:
                 st.write("Error: Unable to generate CSV file.")
