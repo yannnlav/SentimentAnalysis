@@ -223,7 +223,7 @@ def app():
             st.write(counts)
             
             #reads the sample count from the previous line
-            labels = ['Negative','Positive']
+            labels = ['Disagree','Agree']
             sizes = [counts[0], counts[1]]
             custom_colours = ['#ff7675', '#74b9ff']
 
